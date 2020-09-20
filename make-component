@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+fileLocation=./src/components
+
+echo 'Enter the component name:'
+read name
+
+reactBoilerPlate="import React from 'react';\n\nimport './$name.scss'\n\nconst $name = () =>{\n\treturn(\n\t\t<>\n\t\t</>\n\t)\n}\n\nexport default $name;"
+
+fullPath="$fileLocation/$name"
+
+mkdir $fullPath
+
+echo -e >> "$fullPath/$name.scss"
+echo -e $reactBoilerPlate >> "$fullPath/$name.js"
