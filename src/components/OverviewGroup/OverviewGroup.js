@@ -4,16 +4,14 @@ import OverviewCard from '../OverviewCard/OverviewCard';
 
 import './OverviewGroup.scss'
 
-const OverviewGroup = ({platformInfo: {name, metrics}}) =>{
-	const metricArr = Object.keys(metrics);
+const OverviewGroup = ({platformInfo: {name, metrics, Logo}}) =>{
 	return(
 		<div className = {`${name}_stats overview__${name}`}>
 			{
-				metricArr.map(metric => (
+				metrics.map(metric => (
 					<OverviewCard 
-						metric = {metric.replace(/_/g, " ")} 
-						value = {metrics[metric]}
-						name = {name}
+						metric = {metric}
+						Logo = {Logo}
 					/>
 				))
 			}
