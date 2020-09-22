@@ -18,7 +18,13 @@ const PLATFORMS = {
                 change: -2
             }
         ],
-        Logo: Facebook
+        Logo: Facebook,
+        stats: {
+            username: 'Seyi Oluwaleimu',
+            statType: 'followers',
+            count: 1987,
+            change: 12
+        }
     },
     IG:{
         name: 'Instagram',
@@ -34,7 +40,13 @@ const PLATFORMS = {
                 change: 1375
             }
         ],
-        Logo: Instagram
+        Logo: Instagram,
+        stats: {
+            username: 'wadboy',
+            statType: 'followers',
+            count: '11k',
+            change: 1099
+        }
     },
     TW:{
         name: 'Twitter',
@@ -50,7 +62,13 @@ const PLATFORMS = {
                 change: 553
             }
         ],
-        Logo: Twitter
+        Logo: Twitter,
+        stats: {
+            username: 'wadb0y',
+            statType: 'followers',
+            count: 1044,
+            change: 99
+        }
     },
     YT:{
         name: 'YouTube',
@@ -66,7 +84,13 @@ const PLATFORMS = {
                 change: -12
             }
         ],
-        Logo: Youtube
+        Logo: Youtube,
+        stats: {
+            username: 'wadboy',
+            statType: 'subscribers',
+            count: 8239,
+            change: -144
+        }
     }
 };
 

@@ -11,7 +11,7 @@ const Dashboard = () =>{
 	
 	return(
 		<div className = 'dashboard app__dashboard'>
-			<div className = 'mainCards dashboard__mainCards'>
+			<div className = 'main dashboard__mainCards'>
 				{
 					PLATFORMS.map((platform, index) => (
 						<MainCard platformInfo = {platformInfo[platform]}

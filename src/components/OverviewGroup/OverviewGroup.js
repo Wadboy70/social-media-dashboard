@@ -4,9 +4,9 @@ import OverviewCard from '../OverviewCard/OverviewCard';
 
 import './OverviewGroup.scss'
 
-const OverviewGroup = ({platformInfo: {name, metrics, Logo}}) =>{
+const OverviewGroup = ({platformInfo: {metrics, Logo}}) =>{
 	return(
-		<div className = {`${name}_stats overview__${name}`}>
+		<div className = {`overviewGroup overview__overviewGroup`}>
 			{
 				metrics.map(metric => (
 					<OverviewCard 

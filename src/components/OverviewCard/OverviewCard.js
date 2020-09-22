@@ -7,18 +7,22 @@ import './OverviewCard.scss'
 
 const OverviewCard = ({metric: {name, count, change}, Logo}) =>{
 	return(
-		<div className = 'stats'>
-			<span>{name}:</span>
-			<span>{count}</span>
-			<Logo/>
-			<span> 
-				{
-					change >= 0 ? 
-					<Up/> : 
-					<Down/>
-				} 
-				{change}
-			</span>
+		<div className = 'overviewCard overviewGroup__overviewCard'>
+			<div className = 'overviewCard__name'>{name}:</div>
+			<div className = 'overviewCard__count'>{count}</div>
+			<Logo className = 'overviewCard__logo'/>
+			<div className = 'overviewCard__change'> 
+				<span className = 'overviewCard__arrow'>
+					{
+						change >= 0 ? 
+						<Up/> : 
+						<Down/>
+					} 
+				</span>
+				<span className = 'overviewCard__changeValue'>
+					{change}
+				</span>
+			</div>
 		</div>
 	)
 }
