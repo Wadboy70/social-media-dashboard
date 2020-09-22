@@ -2,11 +2,14 @@ import React from 'react';
 
 import './Switch.scss'
 
-const Switch = () =>{
+const Switch = ({handleToggle, isOn}) =>{
 	//figure how to run a function when the checkbox is changed :)
 	return(
 		<label className = 'switch'>
-			<input type = 'checkbox' />
+			<input type = 'checkbox' 
+				checked = {isOn}
+				onChange = {handleToggle}
+			/>
 			<span className = 'slider round'></span>
 		</label>
 	)

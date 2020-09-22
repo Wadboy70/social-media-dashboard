@@ -1,0 +1,13 @@
+@import '../../utils/globalVariables';
+
+.arrow--green{
+    *{
+        color: $limeGreen;
+    }
+}
+
+.arrow--red{
+    *{
+        color: $brightRed;
+    }
+}

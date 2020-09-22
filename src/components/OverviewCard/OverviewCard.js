@@ -1,28 +1,20 @@
 import React from 'react';
 
-import { ReactComponent as Down } from '../../assets/icon-down.svg';
-import { ReactComponent as Up } from '../../assets/icon-up.svg';
+import ChangeArrow from '../ChangeArrow/ChangeArrow';
 
 import './OverviewCard.scss'
 
 const OverviewCard = ({metric: {name, count, change}, Logo}) =>{
 	return(
 		<div className = 'overviewCard overviewGroup__overviewCard'>
-			<div className = 'overviewCard__name'>{name}:</div>
-			<div className = 'overviewCard__count'>{count}</div>
+			<h4 className = 'overviewCard__name'>{name}:</h4>
+			<h5 className = 'overviewCard__count'>{count}</h5>
 			<Logo className = 'overviewCard__logo'/>
-			<div className = 'overviewCard__change'> 
-				<span className = 'overviewCard__arrow'>
-					{
-						change >= 0 ? 
-						<Up/> : 
-						<Down/>
-					} 
-				</span>
-				<span className = 'overviewCard__changeValue'>
-					{change}
-				</span>
-			</div>
+			<ChangeArrow 
+				className = 'overviewCard__change'
+				change = {change}
+				unit = '%'
+			/>
 		</div>
 	)
 }

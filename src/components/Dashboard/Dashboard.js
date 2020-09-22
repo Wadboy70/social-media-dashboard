@@ -14,7 +14,8 @@ const Dashboard = () =>{
 			<div className = 'main dashboard__mainCards'>
 				{
 					PLATFORMS.map((platform, index) => (
-						<MainCard platformInfo = {platformInfo[platform]}
+						<MainCard 
+							platformInfo = {platformInfo[platform]}
 							key = {index}
 						/>
 					))
@@ -24,7 +25,8 @@ const Dashboard = () =>{
 				<h2>Overview - Today</h2>
 				{
 					PLATFORMS.map((platform, index) => (
-						<OverviewGroup platformInfo = {platformInfo[platform]}
+						<OverviewGroup 
+							platformInfo = {platformInfo[platform]}
 							key = {index}
 						/>
 					))

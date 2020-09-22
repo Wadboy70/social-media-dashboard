@@ -1,19 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import Header from '../Header/Header';
 import Dashboard from '../Dashboard/Dashboard';
-import { ThemeProvider } from '../../utils/ThemeContext';
+import {ThemeContext } from '../../utils/ThemeContext';
 
 import './App.scss';
 
 function App() {
+  const [lightTheme] = useContext(ThemeContext);
   return (
-    <ThemeProvider>
-      <div className="app">
+      <div className={`app app--${lightTheme? 'light' : 'dark'}`}>
         <Header/>
         <Dashboard/>
       </div>
-    </ThemeProvider>
   );
 }
 

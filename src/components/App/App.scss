@@ -1,3 +1,62 @@
+//app will hold the global colors for the project
+@import '../../utils/globalVariables';
+$transitionTime: .5s;
 *{
+    box-sizing: border-box;
     font-family: Inter;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.app{
+    transition: background-color $transitionTime;
+    *{
+        transition: background-color $transitionTime;
+    }
+    .slider {
+        background-image: $toggleDark;
+    }
+}
+.app--dark{
+    color:$whiteText;
+    background-color: $veryDarkBlueBG;
+    .app__head{
+        background-color: $veryDarkBlueTopBG;
+    }
+    .overviewGroup__overviewCard, .main__mainCard{
+        background-color: $darkDesaturatedBlueCard;
+        &:hover{
+            background-color: $darkDesaturatedBlueCardHover;
+        }
+    }
+    .slider:before{
+        background-color: $veryDarkBlueTopBG;
+    }
+    h3, h4, h6{
+        color: $desaturatedBlueText;
+    }
+}
+.app--light{
+    color: $veryDarkBlueText;
+    background-color: $whiteBG;
+    .app__head{
+        background-color: $veryPaleBlueTopBG;
+    }
+    .overviewGroup__overviewCard, .main__mainCard{
+        background-color: $lightGrayishBlueCard;
+        &:hover{
+            background-color: $lightGrayishBlueCardHover;
+        }
+    }
+    .slider:before {
+        background-color: $veryPaleBlueTopBG;
+    }
+
+    h3, h4, h6{
+        color: $darkGrayishText;
+    }
+}
+
+h1{
+    font-size: 2rem;
 }
