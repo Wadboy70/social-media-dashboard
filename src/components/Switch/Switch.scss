@@ -1,10 +1,12 @@
 @import '../../utils/globalVariables';
+$width: 50px;
+$height: $width * .5;
 
 .switch{
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 35px;
+    width: $width;
+    height: $height;
 }
 .switch input {
     opacity: 0;
@@ -24,20 +26,20 @@
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: $width * .43;
+    width: $width * .43;
+    left: $width * .036;
+    bottom: $width * .036;
     -webkit-transition: .4s;
     transition: .4s;
 }
 input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX($width * .51);
+    -ms-transform: translateX($width * .51);
+    transform: translateX($width * .51);
 }
 .slider.round {
-    border-radius: 34px;
+    border-radius: $width * .48;
 }
   
 .slider.round:before {

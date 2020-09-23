@@ -14,7 +14,6 @@ const MainCard = ({
 			change
 		}
 	}}) =>{
-		console.log(name)
 	return(
 		<div className = 'mainCard main__mainCard'>
 			<div className = {`${name}Border mainCart__border`}/>

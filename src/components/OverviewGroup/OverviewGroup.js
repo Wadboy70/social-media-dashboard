@@ -8,8 +8,9 @@ const OverviewGroup = ({platformInfo: {metrics, Logo}}) =>{
 	return(
 		<div className = {`overviewGroup overview__overviewGroup`}>
 			{
-				metrics.map(metric => (
+				metrics.map((metric, key) => (
 					<OverviewCard 
+						key = {key}
 						metric = {metric}
 						Logo = {Logo}
 					/>

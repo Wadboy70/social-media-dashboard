@@ -7,9 +7,9 @@ import './Header.scss';
 
 const Header = () =>{
 	const [lightTheme, setLightTheme] = useContext(ThemeContext);
-	console.log(lightTheme);
 	return(
 		<header className = 'header app__head'>
+			<div className = 'topBG header__topBG'/>
 			<h1 className = 'header__title'>Social Media Dashboard</h1>
 			<h3 className = 'header__subTitle'>Total Followers: 23,004</h3>
 			<hr/>

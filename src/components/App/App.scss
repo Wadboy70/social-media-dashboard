@@ -8,19 +8,17 @@ $transitionTime: .5s;
     margin: 0;
     padding: 0;
 }
+
 .app{
-    transition: background-color $transitionTime;
-    *{
-        transition: background-color $transitionTime;
-    }
-    .slider {
-        background-image: $toggleDark;
-    }
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
 }
 .app--dark{
     color:$whiteText;
     background-color: $veryDarkBlueBG;
-    .app__head{
+    .header__topBG{
         background-color: $veryDarkBlueTopBG;
     }
     .overviewGroup__overviewCard, .main__mainCard{
@@ -29,17 +27,23 @@ $transitionTime: .5s;
             background-color: $darkDesaturatedBlueCardHover;
         }
     }
-    .slider:before{
-        background-color: $veryDarkBlueTopBG;
+    .slider {
+        background-image: $toggleDark;
+        &:before{
+            background-color: $veryDarkBlueTopBG;
+        }
     }
     h3, h4, h6{
         color: $desaturatedBlueText;
+    }
+    hr{
+        border-color: $desaturatedBlueText;
     }
 }
 .app--light{
     color: $veryDarkBlueText;
     background-color: $whiteBG;
-    .app__head{
+    .header__topBG{
         background-color: $veryPaleBlueTopBG;
     }
     .overviewGroup__overviewCard, .main__mainCard{
@@ -48,15 +52,31 @@ $transitionTime: .5s;
             background-color: $lightGrayishBlueCardHover;
         }
     }
-    .slider:before {
-        background-color: $veryPaleBlueTopBG;
+    .slider {
+        background-color: $toggleLight;
+        &:before {
+            background-color: $veryPaleBlueTopBG;
+        }
     }
 
     h3, h4, h6{
         color: $darkGrayishText;
     }
+    hr{
+        border-color: $darkGrayishText;
+    }
 }
-
 h1{
-    font-size: 2rem;
+    font-size: 24px;
+    margin: 5px 0px;
+}
+h3{
+    font-size: 14px;
+}
+hr{
+    border-width: .5px;
+    border-bottom: 0px;
+}
+div, header, .slider{
+    transition: background-color $transitionTime, background-image $transitionTime;
 }
