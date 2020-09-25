@@ -4,6 +4,8 @@
     border-radius: 10px;
     display: grid;
     grid-template-rows: 5% 30% 30% 10% 30%;
+    grid-template-columns: 100%;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
     h4,h5{
@@ -23,11 +25,16 @@
         font-size: 60px;
     }
     .mainCard__userName{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .userName__logo{
             margin-right: 8px;
         }
     }
     .mainCard__border{
-
+        align-self:flex-start ;
+        width: inherit;
+        height: 5px;
     }
 }

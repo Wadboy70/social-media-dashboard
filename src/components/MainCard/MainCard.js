@@ -16,7 +16,7 @@ const MainCard = ({
 	}}) =>{
 	return(
 		<div className = 'mainCard main__mainCard'>
-			<div className = {`${name}Border mainCart__border`}/>
+			<div className = {`${name}_Border mainCard__border`}/>
 			<h4 className = 'userName mainCard__userName'>
 				<Logo className = 'userName__logo'/>
 				<span className = 'userName__handle'>{`${(name !== 'YouTube') ? '@' : ''}${username}`}</span>
