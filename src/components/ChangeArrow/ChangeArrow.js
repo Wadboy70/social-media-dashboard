@@ -7,16 +7,18 @@ import './ChangeArrow.scss'
 
 const ChangeArrow = ({className, change, unit}) =>{
 	return(
-		<h6 className = {`${change >= 0 ? 'arrow--green' : 'arrow--red'} ${className}`}>
-			<span className = 'arrow'>
+		<div className = {`${className} arrow`}>
+			<span className = 'point'>
 				{ (change >= 0) ? 
 					<Up/> : 
 					<Down/>
 				}
-				</span>			
-			<span className = 'changeValue'>{change}</span>
-			<span className = 'unit'>{unit}</span>
-		</h6>
+			</span>	
+			<h6 className = {`${change >= 0 ? 'arrow--green' : 'arrow--red'}`}>		
+				<span className = 'changeValue'>{change > 0 ? change : change*-1}</span>
+				<span className = 'unit'>{unit}</span>
+			</h6>
+		</div>
 	)
 }
 

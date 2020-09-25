@@ -1,13 +1,27 @@
 @import '../../utils/globalVariables';
 
-.arrow--green{
-    *{
-        color: $limeGreen;
+.arrow{
+    margin-bottom: 17px;
+    .point{
+        svg{
+            margin-bottom: 4px;
+        }
     }
-}
+    .changeValue{
+        margin-left:6px;
+    }
+    h6{
+        font-size: 14px;
+    }
+    .arrow--green{
+        *{
+            color: $limeGreen;
+        }
+    }
 
-.arrow--red{
-    *{
-        color: $brightRed;
+    .arrow--red{
+        *{
+            color: $brightRed;
+        }
     }
 }

@@ -1,1 +1,33 @@
+.main__mainCard{
+    height: 60vw;
+    margin: 20px 0px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 5% 30% 30% 10% 30%;
+    align-items: center;
+    justify-content: center;
+    h4,h5{
+        text-align: center;
+    }
+    .mainCard__mainChange{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .mainCard__statType{
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 4.5px;
+    }
+    .mainCard__count{
+        font-size: 60px;
+    }
+    .mainCard__userName{
+        .userName__logo{
+            margin-right: 8px;
+        }
+    }
+    .mainCard__border{
 
+    }
+}
