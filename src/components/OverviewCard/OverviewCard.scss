@@ -1,1 +1,29 @@
-
+.overviewGroup__overviewCard{
+    margin-bottom: 18px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    align-items: center;
+    justify-content: space-around;
+    height: 30vw;
+    .overviewCard__cardCol{
+        height: 70%;
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &:nth-child(2){
+            align-items: center;
+        }
+        .cardCol__logo{
+            position: relative;
+            left: 6.5px;
+        }
+        .cardCol__count{
+            font-size: 30px;
+        }
+        .cardCol__name{
+            white-space: nowrap;
+        }
+    }
+}
