@@ -1,0 +1,30 @@
+
+@import '../../utils/globalVariables';
+
+@media only screen and (min-width: $mobile) {
+    .dashboard__mainCards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 35vw);
+        gap: 0vw 10vw;
+    }
+    
+}
+@media only screen and (min-width: $desktop) {
+    .app__dashboard{
+        .dashboard__mainCards{
+            grid-template-columns: repeat(4, 17.5vw);
+            gap: calc(10vw/3);
+        }
+        .dashboard__overviewCards{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 40vw;
+             gap: 0vw calc(10vw/6);
+            .overview__title{
+                grid-column: 1/end;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

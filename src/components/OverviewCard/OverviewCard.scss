@@ -1,3 +1,5 @@
+@import '../../utils/globalVariables';
+
 .overviewGroup__overviewCard{
     margin-bottom: 18px;
     border-radius: 10px;
@@ -25,5 +27,19 @@
         .cardCol__name{
             white-space: nowrap;
         }
+    }
+}
+
+@media only screen and (min-width: $mobile) {
+    .overviewGroup__overviewCard{
+        width: 35vw;
+        height: 15vw;
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+    .overviewGroup__overviewCard{
+        width: 17.5vw;
+        height: 8vw;
     }
 }

@@ -1,3 +1,5 @@
+@import '../../utils/globalVariables';
+
 .app__head{
     
     hr{
@@ -10,7 +12,7 @@
         align-items: center;
         margin-bottom: 20px;
     }
-    .header__topBG{
+    .titleBox__topBG{
         left: 0;
         top: 0;
         z-index: -1;
@@ -19,4 +21,19 @@
         height: 300px;
         border-radius: 0px 0px 20px 20px;
     }
+}
+@media only screen and (min-width: $mobile) {
+    .app__head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 0px 40px 0px;
+        hr{
+            display: none;
+        }
+        .theme__mode{
+            margin-right: 10px;
+        }
+    }
+
 }

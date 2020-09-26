@@ -1,3 +1,5 @@
+@import '../../utils/globalVariables';
+
 .main__mainCard{
     height: 60vw;
     margin: 20px 0px;
@@ -34,5 +36,16 @@
         align-self:flex-start ;
         width: inherit;
         height: 5px;
+    }
+}
+
+@media only screen and (min-width: $mobile) {
+    .main__mainCard{
+        height: 35vw;
+    }
+}
+@media only screen and (min-width: $desktop) {
+    .main__mainCard{
+        height: 15vw;
     }
 }

@@ -22,7 +22,7 @@ const Dashboard = () =>{
 				}
 			</div>
 			<div className = 'overview dashboard__overviewCards'>
-				<h1>Overview - Today</h1>
+				<h1 className = 'overview__title'>Overview - Today</h1>
 				{
 					PLATFORMS.map((platform, index) => (
 						<OverviewGroup 

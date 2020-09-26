@@ -5,14 +5,17 @@ $transitionTime: .5s;
     box-sizing: border-box;
     font-family: Inter;
     font-weight: 700;
+    font-size: 16px;
     margin: 0;
     padding: 0;
 }
 
 .app{
-    padding: 20px;
+    min-height: 100vh;
+    padding: 7%;
     position: absolute;
     width: 100%;
+    min-width: 320px;
     z-index: 0;
     .Facebook_Border{
         background-color:$facebook ;
@@ -24,10 +27,11 @@ $transitionTime: .5s;
         background-color:$youtube ;
     }
 }
+
 .app--dark{
     color:$whiteText;
     background-color: $veryDarkBlueBG;
-    .header__topBG{
+    .titleBox__topBG{
         background-color: $veryDarkBlueTopBG;
     }
     .overviewGroup__overviewCard, .main__mainCard{
@@ -52,7 +56,7 @@ $transitionTime: .5s;
 .app--light{
     color: $veryDarkBlueText;
     background-color: $whiteBG;
-    .header__topBG{
+    .titleBox__topBG{
         background-color: $veryPaleBlueTopBG;
     }
     .overviewGroup__overviewCard, .main__mainCard{
@@ -76,11 +80,11 @@ $transitionTime: .5s;
     }
 }
 h1{
-    font-size: 24px;
+    font-size: 1.5rem;
     margin: 5px 0px;
 }
 h3{
-    font-size: 14px;
+    font-size: .87rem;
 }
 hr{
     border-width: .5px;
@@ -88,4 +92,10 @@ hr{
 }
 div, header, .slider{
     transition: background-color $transitionTime, background-image $transitionTime;
+}
+
+@media only screen and (min-width: $mobile) {
+    .app{
+        padding: 2% 10%;
+    }
 }
